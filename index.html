@@ -6,11 +6,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JavaScript and DOM API</title>
     <link rel="stylesheet" type="text/css" href="game.css" media="all" />
-    <script src="game.js"></script> <noscript></noscript>
+    <script src="game.js"></script>
+    <script>
+        var bear;
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <body>
-
+        
+        <body onload="start();"></body>
         <div id="title">
             <h1>Help the bear escape the bees !</h1>
             <p>Bear tries to avoid being stung by <input type="text" id="nbBees" value="1" size="3"> bees by running and jumping. The objective is to have as less stings as possible!</p>
